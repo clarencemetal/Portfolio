@@ -168,7 +168,7 @@
 
                 <!-- Vibrations -->
                 <div class="project-card bg-white rounded-2xl shadow-md overflow-hidden fade-in delay-1" onclick="openModal('vibration')">
-                    <img src="vibration/vib_banc.png" alt="Analyse modale d'un ski sur banc d'essai" class="w-full h-44 object-cover border-b border-gray-100">
+                    <img src="vibration/vib_fem_modes.png" alt="Analyse modale d'un ski sur banc d'essai" class="w-full h-44 object-cover border-b border-gray-100">
                     <div class="p-5">
                         <div class="flex flex-wrap gap-2 mb-2">
                             <span class="skill-chip" style="background:#eff6ff;color:#1d4ed8;">Analyse modale</span>
@@ -207,7 +207,7 @@
 
                 <!-- FEM -->
                 <div class="project-card bg-white rounded-2xl shadow-md overflow-hidden fade-in" onclick="openModal('fem')">
-                    <img src="fem/fem_mises.png" alt="Simulation FEM – carte de contraintes Von Mises sur filets" class="w-full h-44 object-cover border-b border-gray-100">
+                    <img src="fem/fem_stress_mises.png" alt="Simulation FEM – carte de contraintes Von Mises sur filets" class="w-full h-44 object-cover border-b border-gray-100">
                     <div class="p-5">
                         <div class="flex flex-wrap gap-2 mb-2">
                             <span class="skill-chip" style="background:#f0fdf4;color:#166534;">Éléments finis</span>
@@ -401,8 +401,8 @@
                 </div>`,
                 media: [
                     {type:'image', src:'vibration/vib_banc.png', caption:'Ski sur le banc d\'essai — mesure sans contact par vibrométrie laser'},
-                    {type:'image', src:'vibration/vib_modes.png', caption:'Formes modales extraites par simulation (Simcenter Nastran)'},
-                    {type:'image', src:'vibration/vib_spectre.png', caption:'Balayage harmonique — spectre FFT et déformée reconstruite'},
+                    {type:'image', src:'vibration/vib_fem_modes.png', caption:'Formes modales extraites par simulation (Simcenter Nastran)'},
+                    {type:'image', src:'vibration/vib_harmonic_scan.png', caption:'Balayage harmonique — spectre FFT et déformée reconstruite'},
                     {type:'video', src:'vibration/Travail_pratique_en_genie_mecanique_-_HEIA-FR.mp4'}
                 ]
             },
@@ -498,8 +498,8 @@
                     </div>
                 </div>`,
                 media: [
-                    {type:'image', src:'fem/fem_fkm.png', caption:'Trajectoires des nœuds critiques (déformation plastique / triaxialité) — le franchissement de la courbe limite indique la rupture'},
-                    {type:'image', src:'fem/fem_mises.png', caption:'Carte de contraintes Von Mises sur une liaison filetée'},
+                    {type:'image', src:'fem/fem_fkm_graph.png', caption:'Trajectoires des nœuds critiques (déformation plastique / triaxialité) — le franchissement de la courbe limite indique la rupture'},
+                    {type:'image', src:'fem/fem_stress_mises.png', caption:'Carte de contraintes Von Mises sur une liaison filetée'},
                     {type:'placeholder', caption:'Résultat d\'optimisation topologique (forme « organique »)'}
                 ]
             },
